@@ -1,8 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
 import Wrapper from "../Wrapper/Wrapper";
 import "./style.css";
 
-function Contact() {
+class Contact extends Component {
+
+    state = {
+        fullname: "",
+        email: "",
+        message: ""
+    }
+
+    handleInputChange = event => {
+
+      this.setState({
+        [event.target.name]: event.target.value
+      });
+      console.log(this.state)
+    };
+
+    render() {
+
     return (
       <Wrapper>
     <div className="container contact">
@@ -11,18 +28,36 @@ function Contact() {
                 <div className="col-md-12">
                     <form>
                         <div className="form-group">
-                          <label for="exampleFormControlInput1">Name</label>
-                          <input type="email" className="form-control" id="exampleFormControlInput1" />
+                          <label htmlFor="exampleFormControlInput1">Name</label>
+                          <input 
+                            value={this.state.fullname}
+                            name="fullname"
+                            onChange={this.handleInputChange}
+                            type="text"
+                            className="form-control"
+                          />
                         </div>
                         <div className="form-group">
-                                <label for="exampleFormControlInput1">Email</label>
-                                <input type="email" className="form-control" id="exampleFormControlInput1" />
+                              <label htmlFor="exampleFormControlInput2">Email</label>
+                              <input 
+                                value={this.state.email}  
+                                name="email"
+                                onChange={this.handleInputChange}
+                                type="text"
+                                className="form-control"
+                                />
                               </div>
                               <div className="form-group">
-                                    <label for="exampleFormControlTextarea1">Message</label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                  <label htmlFor="exampleFormControlTextarea1">Message</label>
+                                  <textarea 
+                                  value={this.state.message}
+                                  name="message"
+                                  onChange={this.handleInputChange}
+                                  type="text"
+                                  className="form-control"
+                                  />
                                   </div>
-                                  <button type="submit" className="btn btn-primary">Submit</button>
+                                  <button onClick={this.handleSubmit} type="submit" className="btn btn-primary">Submit</button>
                  
                       </form>
                 </div>
@@ -31,7 +66,8 @@ function Contact() {
         </Wrapper>
         
     )
-        
+       
+    }
 }
 
 export default Contact;

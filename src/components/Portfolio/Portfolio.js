@@ -57,7 +57,7 @@ function Projects() {
            <div className="row">
                <div className="col-md-4">
                    <Tooltip title={trainSchedule} classes={{ tooltip: classes.customWidth }}><a href="https://jameslrobbins.github.io/TrainScheduler/" target="_blank" rel="noopener noreferrer"><img src={require("../../Images/Train_Schedule.png")} alt="Train Schedule" className="projectsImg hvr-grow-shadow" /></a></Tooltip>
-                   <p class="project">Train Schedule</p>
+                   <p className="project">Train Schedule</p>
                    <p className="git hvr-grow "><a href ="https://github.com/JamesLRobbins/TrainScheduler" target="_blank" rel="noopener noreferrer">GitHub</a></p>
                </div>
                 <div className="col-md-4">

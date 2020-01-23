@@ -11,15 +11,15 @@ function NavBar(props) {
     </button>
     <div className="navbar-collapse collapse" id="collapsingNavbar">
         <ul className="navbar-nav">
-            <li className="nav-item">
-                <div className="nav-link hvr-grow">{props.about}</div>
-            </li>
-            <li className="nav-item">
-                <div className="nav-link hvr-grow">{props.projects}</div>
-            </li>
-            <li className="nav-item">
+            <div className="nav-item aboutNav">
+                <div className="nav-link hvr-grow" data-toggle="collapse">{props.about}</div>
+            </div>
+            <div className="nav-item projectsNav">
+                <div className="nav-link hvr-grow" data-toggle="collapse">{props.projects}</div>
+            </div>
+            <div className="nav-item projectsNav">
                 <div className="nav-link hvr-grow" data-toggle="collapse">{props.contact}</div>
-            </li>
+            </div>
         </ul>
     </div>
 </nav>

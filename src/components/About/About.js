@@ -23,21 +23,21 @@ function About() {
 
             <div className="row extLinks">
                 <div className="col-md-4">
-                    <div className="ui animated button black" tabindex="0"><a href="https://www.linkedin.com/in/james-robbins-08750953/" target="_blank" rel="noopener noreferrer">
+                    <div className="ui animated button black linked" tabIndex="0"><a href="https://www.linkedin.com/in/james-robbins-08750953/" target="_blank" rel="noopener noreferrer">
                             <div className="visible content">LinkedIn</div>
-                            <div className="hidden content">LinkedIn <Icon name="linkedin icon" /></div>
+                            <div className="hidden content">LinkedIn <Icon name="linkedin" /></div>
                         </a></div>
                 </div>
                 <div className="col-md-4">
-                    <button className="ui animated button black"><a href="https://github.com/JamesLRobbins" target="_blank" rel="noopener noreferrer">
+                    <button className="ui animated button black gh"><a href="https://github.com/JamesLRobbins" target="_blank" rel="noopener noreferrer">
                         <div className="visible content">GitHub</div>
-                        <div className="hidden content">GitHub <Icon name="github icon" /></div>
+                        <div className="hidden content">GitHub <Icon name="github" /></div>
                         </a></button>
                 </div>
                 <div className="col-md-4">
-                    <button className="ui animated button black"><a href="https://pdfhost.io/v/YmWU++eGO_James_Robbins_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className="ui animated button black res"><a href="https://pdfhost.io/v/YmWU++eGO_James_Robbins_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <div className="visible content">Resume</div>
-                        <div className="hidden content">Resume <Icon name="edit icon" /></div>   
+                        <div className="hidden content">Resume <Icon name="edit" /></div>   
                         </a></button>
                 </div>
             </div>
