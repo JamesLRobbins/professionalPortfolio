@@ -15,8 +15,8 @@ export default class Home extends React.Component {
         this.toggleProjects = this.toggleProjects.bind(this)
 
         this.state = {
-            showAbout: true,
-            showProjects: false,
+            showAbout: false,
+            showProjects: true,
             showContact: false,
         }
     }

@@ -20,7 +20,7 @@
  }
 
 
- @media only screen and (max-width: 1230px) {
+ @media only screen and (max-width: 768px) {
     .about {
        font-size: 15px;
     } 
@@ -41,5 +41,11 @@
         position: relative;
         bottom: 60px;
     }
+    }
+
+    @media only screen and (max-height: 800px) {
+        .about {
+           font-size: 20px;
+        }
     }
     
