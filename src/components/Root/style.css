@@ -1,0 +1,18 @@
+.jamesImg {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 2px 2px 8px #BFBFBF;
+}
