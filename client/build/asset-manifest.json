@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/JamesLRobbins/professionalPortfolio/static/css/main.aec3c844.chunk.css",
+    "main.js": "/JamesLRobbins/professionalPortfolio/static/js/main.945c7e49.chunk.js",
+    "main.js.map": "/JamesLRobbins/professionalPortfolio/static/js/main.945c7e49.chunk.js.map",
+    "runtime-main.js": "/JamesLRobbins/professionalPortfolio/static/js/runtime-main.5d3cd2dd.js",
+    "runtime-main.js.map": "/JamesLRobbins/professionalPortfolio/static/js/runtime-main.5d3cd2dd.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/JamesLRobbins/professionalPortfolio/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.1e166a14.chunk.js": "/JamesLRobbins/professionalPortfolio/static/js/2.1e166a14.chunk.js",
+    "static/js/2.1e166a14.chunk.js.map": "/JamesLRobbins/professionalPortfolio/static/js/2.1e166a14.chunk.js.map",
+    "index.html": "/JamesLRobbins/professionalPortfolio/index.html",
+    "precache-manifest.4971d914f43e20ebd70cfec8d650b941.js": "/JamesLRobbins/professionalPortfolio/precache-manifest.4971d914f43e20ebd70cfec8d650b941.js",
+    "service-worker.js": "/JamesLRobbins/professionalPortfolio/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/JamesLRobbins/professionalPortfolio/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.aec3c844.chunk.css.map": "/JamesLRobbins/professionalPortfolio/static/css/main.aec3c844.chunk.css.map",
+    "static/media/Crystal_Game.png": "/JamesLRobbins/professionalPortfolio/static/media/Crystal_Game.56b1499e.png",
+    "static/media/Friend-FInder.jpg": "/JamesLRobbins/professionalPortfolio/static/media/Friend-FInder.eb97415c.jpg",
+    "static/media/LBK2GO.png": "/JamesLRobbins/professionalPortfolio/static/media/LBK2GO.587fa458.png",
+    "static/media/Train_Schedule.png": "/JamesLRobbins/professionalPortfolio/static/media/Train_Schedule.b4d9ec16.png",
+    "static/media/Trivia_Game.png": "/JamesLRobbins/professionalPortfolio/static/media/Trivia_Game.8a1bb472.png",
+    "static/media/Vacation Roulette.jpg": "/JamesLRobbins/professionalPortfolio/static/media/Vacation Roulette.7b57592d.jpg",
+    "static/media/Word_Guess.png": "/JamesLRobbins/professionalPortfolio/static/media/Word_Guess.59a6d7f1.png",
+    "static/media/bamazon.jpg": "/JamesLRobbins/professionalPortfolio/static/media/bamazon.75c4910e.jpg",
+    "static/media/burger.png": "/JamesLRobbins/professionalPortfolio/static/media/burger.fdc24c44.png",
+    "static/media/clickyGame.png": "/JamesLRobbins/professionalPortfolio/static/media/clickyGame.3987ddcb.png",
+    "static/media/james.jpg": "/JamesLRobbins/professionalPortfolio/static/media/james.43d0e07e.jpg",
+    "static/media/liri.jpg": "/JamesLRobbins/professionalPortfolio/static/media/liri.1624e8b4.jpg",
+    "static/media/listAssist.png": "/JamesLRobbins/professionalPortfolio/static/media/listAssist.a058f032.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d3cd2dd.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.1e166a14.chunk.js",
+    "static/css/main.aec3c844.chunk.css",
+    "static/js/main.945c7e49.chunk.js"
+  ]
+}

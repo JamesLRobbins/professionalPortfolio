@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
@@ -6,16 +7,14 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-if (process.env.NODE_ENV === "production") {
-    app.get('/*', function(req, res) {
-        res.sendFile(path.join(__dirname, '/client/public/index.html'), function(err) {
-          if (err) {
-            res.status(500).send(err)
-          }
-        })
-      })
-
-  }
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/ping', function (req, res) {
+ return res.send('pong');
+});
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.post('/api/form', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
