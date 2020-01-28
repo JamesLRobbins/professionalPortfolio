@@ -16,8 +16,8 @@ export default class Home extends React.Component {
 
         this.state = {
             showAbout: false,
-            showProjects: true,
-            showContact: false,
+            showProjects: false,
+            showContact: true,
         }
     }
 
