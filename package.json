@@ -4,8 +4,8 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
