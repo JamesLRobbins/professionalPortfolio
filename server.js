@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 
 app.post('/api/form', (req, res) => {
