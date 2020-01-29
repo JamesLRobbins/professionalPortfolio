@@ -35,6 +35,8 @@ class Contact extends Component {
       message
     })
 
+    console.log(form)
+
   }
 
   render() {
