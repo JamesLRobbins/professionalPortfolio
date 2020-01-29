@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Serve static files from the React app
-app.use(express.static(__dirname + '/client/build'));
+// app.use(express.static(__dirname + '/client/build'));
 
 app.post('/api/form', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
