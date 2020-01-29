@@ -7,15 +7,9 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-if (process.env.NODE_ENV === 'production') {
-    // Serve any static files
-    app.use(express.static(path.join(__dirname, 'client/build')));
-      
-    // Handle React routing, return all requests to React app
-    app.get('*', function(req, res) {
-      res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-    });
-}
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 app.post('/api/form', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
@@ -55,7 +49,11 @@ app.post('/api/form', (req, res) => {
             console.log('Message URL: %s', nodemailer.getTestMessageUrl(info))
         })
     })
-})
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  });
 
 const PORT = process.env.PORT || 3001
 
