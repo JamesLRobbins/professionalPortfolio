@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
+import { Form, FormGroup, Input, Label, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import Wrapper from "../Wrapper/Wrapper";
 import axios from 'axios';
 import { Icon } from 'semantic-ui-react'
@@ -13,7 +13,10 @@ class Contact extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      successModal: false,
+      validEmailModal: false,
+      enterAllInfoModal: false
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -38,7 +41,7 @@ class Contact extends Component {
 
       e.target.reset();
 
-      alert("Sent!")
+      this.setState({successModal: !this.state.successModal})
 
     await axios.post('/api/form', {
       name,
@@ -47,11 +50,29 @@ class Contact extends Component {
     })
     
   }  else if (name === "" || email === "" || message === "")  {
-    alert("Please Enter All Information")
+    this.setState({enterAllInfoModal: !this.state.enterAllInfoModal})
   } else if (this.emailIsValid(email) === false) {
-    alert("Please Enter a valid email address")
+    this.setState({validEmailModal: !this.state.validEmailModal})
   }
     
+  }
+
+  toggleSuccessModal() {
+    this.setState({
+      successModal: !this.state.successModal
+    })
+  }
+
+  toggleValidEmail() {
+    this.setState({
+      validEmailModal: !this.state.validEmailModal
+    })
+  }
+
+  toggleAllInformation() {
+    this.setState({
+        enterAllInfoModal: !this.state.enterAllInfoModal
+    })
   }
 
   render() {
@@ -92,6 +113,31 @@ class Contact extends Component {
           </Button>    
 
       </Form>
+
+      <Modal isOpen={this.state.successModal}>
+        <ModalHeader toggle={this.toggleSuccessModal.bind(this)}>Success!</ModalHeader>
+        <ModalBody>Thank you for your interest.  I'll be in touch.</ModalBody>
+        <ModalFooter>
+          <Button onClick={this.toggleSuccessModal.bind(this)}>Close</Button>
+        </ModalFooter>
+      </Modal>
+
+      <Modal isOpen={this.state.validEmailModal}>
+        <ModalHeader toggle={this.toggleValidEmail.bind(this)}>Sorry!</ModalHeader>
+        <ModalBody>Please Enter A Valid Email</ModalBody>
+        <ModalFooter>
+          <Button onClick={this.toggleValidEmail.bind(this)}>Close</Button>
+        </ModalFooter>
+      </Modal>
+
+      <Modal isOpen={this.state.enterAllInfoModal}>
+        <ModalHeader toggle={this.toggleAllInformation.bind(this)}>Sorry!</ModalHeader>
+        <ModalBody>Please Enter All Information</ModalBody>
+        <ModalFooter>
+          <Button onClick={this.toggleAllInformation.bind(this)}>Close</Button>
+        </ModalFooter>
+      </Modal>
+
       </Wrapper> 
     );
   }

@@ -1,11 +1,10 @@
 import React from "react";
+import "./About.css";
 import Wrapper from "../Wrapper/Wrapper";
 import { Icon } from 'semantic-ui-react'
-import "./About.css";
 
-function About() {
 
-    
+function About() {    
     return (
         <Wrapper>
     <div className="container about">
@@ -29,16 +28,16 @@ function About() {
                         </a></div>
                 </div>
                 <div className="col-md-4">
-                    <button className="ui animated button black gh"><a href="https://github.com/JamesLRobbins" target="_blank" rel="noopener noreferrer">
+                    <div className="ui animated button black gh"><a href="https://github.com/JamesLRobbins" target="_blank" rel="noopener noreferrer">
                         <div className="visible content">GitHub</div>
                         <div className="hidden content">GitHub <Icon name="github" /></div>
-                        </a></button>
+                        </a></div>
                 </div>
                 <div className="col-md-4">
-                    <button className="ui animated button black res"><a href="https://pdfhost.io/v/YmWU++eGO_James_Robbins_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <div className="ui animated button black res"><a href="https://pdfhost.io/v/YmWU++eGO_James_Robbins_Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <div className="visible content">Resume</div>
                         <div className="hidden content">Resume <Icon name="edit" /></div>   
-                        </a></button>
+                        </a></div>
                 </div>
             </div>
             <div className="row">
