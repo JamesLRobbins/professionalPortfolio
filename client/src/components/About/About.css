@@ -9,6 +9,17 @@
       text-align: center;   
   }
 
+  .bioPic {
+      float:left;
+      clear: left;
+      margin-right: 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
   #contact {
       text-align: center;
       margin-top: 30px;
@@ -35,6 +46,11 @@
     #contact {
         position: relative;
         bottom: 60px;
+    }
+
+    .bioPic {
+        height: 150px;
+        width: 150px;
     }
     }
 

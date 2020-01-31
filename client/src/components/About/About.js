@@ -8,6 +8,7 @@ function About() {
     return (
         <Wrapper>
     <div className="container about">
+        <img src={require("../../Images/James Robbins.jpg")} alt="jamesBioPic" className="bioPic"/>
         <p> I was born and raised in Muncy, PA.  At the age of 8, my family and I moved to Tennessee where I've lived ever since.
             At the age of 10, I received my first guitar and started taking lessons at the age of 11.  Over the years, I picked up
             bass, drums, mandolins, and a little bit of piano as well.  I graduated with a degree in Audio Engineering and released
