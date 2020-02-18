@@ -17,18 +17,18 @@ function Projects() {
         },
       }));
 
-    const wordGuess = "Can you guess the correct classic video game?"
-    const triviaGame = "How well do you know 90's Nickelodeon?"
-    const crystalGame = "Can you figure out what each crystal is worth without going over the limit?"
-    const trainSchedule = "A simple to use Train Scheduler"
-    const liri = "A simple interface that allows users to search for songs, bands, and concerts"
-    const bamazon = "Search for available products as a customer, or manage inventory as a manager"
-    const vacation = "Can't decide where to go for vacation?  Let us help!"
-    const friendFinder = "Which video game character would you be best friends with?"
-    const LBK2GO = "A easy to use queue system for live band karaoke"
-    const clickyGame = "A fun memory game.  Don't click the same image twice"
-    const burger = "Add a burger, eat a burger"
-    const listAssist = "Pick which recipes you want to make and we'll generate your grocery list"
+    const wordGuess = ["Can you guess the correct classic video game?", <br />, "Technologies: HTML, CSS, Javascript"]
+    const triviaGame = ["How well do you know 90's Nickelodeon?", <br />, "Technologies: HTML, CSS, Javascript"]
+    const crystalGame = ["Can you figure out what each crystal is worth without going over the limit?", <br />, "Technologies: HTML, CSS, Javascript, JQuery"]
+    const trainSchedule = ["A simple to use Train Scheduler", <br />, "Technologies: HTML, CSS, Javascript, JQuery, Firebase"]
+    const liri = ["A simple interface that allows users to search for songs, bands, and concerts", <br />, "Technologies: Axios, Node, API"]
+    const bamazon = ["Search for available products as a customer, or manage inventory as a manager", <br />, "Technologies: Node, MySQL"]
+    const vacation = ["Can't decide where to go for vacation?  Let us help!", <br />, "Technologies: HTML, CSS, Javascript"]
+    const friendFinder = ["Which video game character would you be best friends with?", <br />, "Technologies: HTML, CSS, Javascript, Node"]
+    const LBK2GO = ["A easy to use queue system for live band karaoke", <br />, "Technologies: HTML, CSS, Javascript, Handlebars, Node, Sequelize"]
+    const clickyGame = ["A fun memory game.  Don't click the same image twice", <br />, "Technologies: HTML, CSS, Javascript, React"]
+    const burger = ["Add a burger, eat a burger", <br />, "Technologies: HTML, CSS, Javascript, MySQL, Node"]
+    const listAssist = ["Pick which recipes you want to make and we'll generate your grocery list", <br />, "Technologies: HTML, CSS, Javascript, React, MongoDB"]
     const classes = useStyles()
     
     return (
